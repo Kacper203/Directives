@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { CreditCardDirective } from './credit-card/credit-card.directive';
 import { TooltipOverviewExample } from './tooltip/tooltip.component';
 import { TooltipDirective } from './tooltip/tooltip.directives';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +18,10 @@ import { TooltipDirective } from './tooltip/tooltip.directives';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatTooltipModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
